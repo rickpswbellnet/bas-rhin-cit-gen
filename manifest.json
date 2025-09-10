@@ -1,0 +1,14 @@
+{
+  "name": "Bas-Rhin Archives Citation Builder",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "Builds a named-reference citation from a Bas-Rhin Archives image record web page and user entered info, and adds the citation to the clipboard.",
+  "permissions": [
+    "scripting",
+    "activeTab",
+	"clipboardWrite"
+  ],
+  "action": {
+    "default_popup": "index.html"
+  }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script src="contentScript.js" defer></script>
+	</head>
+	<body>
+		<h1><center>Bas-Rhin Archives Citation Builder</center></h1>
+		<h2><center>Enter information from the image:</center></h2>
+		<legend>Event type:</legend>
+		<div>
+		  <input type="radio" id="eventTypeBir" name="eventType" value="Birth" />
+		  <label for="eventTypeBir">Birth</label>
+		  <input type="radio" id="eventTypeBap" name="eventType" value="Baptism" />
+		  <label for="eventTypeBap">Baptism</label>
+		  <input type="radio" id="eventTypeMar" name="eventType" value="Marriage" />
+		  <label for="eventTypeMar">Marriage</label>
+		  <input type="radio" id="eventTypeDth" name="eventType" value="Death" />
+		  <label for="eventTypeDth">Death</label>
+		  <input type="radio" id="eventTypeBur" name="eventType" value="Burial" />
+		  <label for="eventTypeBur">Burial</label>
+		</div>
+		<label for="givNames1">Given Names 1 (max 50 characters):</label>
+		<input id="givNames1" name="givNames1" maxlength="50" size="30"/><br>
+		<label for="surname1">Surname 1 (max 50 characters):</label>
+		<input id="surname1" name="surname1" maxlength="50" size="30"/><br>
+		<label for="actDateStr">Act Date (max 11 characters):</label>
+		<input id="actDateStr" name="actDateStr" maxlength="11" size="11"/><br>
+		<label for="actPage">Act Page No (max 5 characters):</label>
+		<input id="actPage" name="actPage" maxlength="5" size="5"/><br>
+		<label for="actNo">Act No (max 5 characters):</label>
+		<input id="actNo" name="actNo" maxlength="5" size="5"/><br>
+		<h2><center>For marriages:</center></h2>
+		<label for="givNames2">Given Names 2 (max 50 characters):</label>
+		<input id="givNames2" name="givNames2" maxlength="50" size="30"/><br>
+		<label for="surname2">Surname 2 (max 50 characters):</label>
+		<input id="surname2" name="surname2" maxlength="50" size="30"/><br>
+		<button id="save_inputs_btn" type="button">Save Inputs</button><br>
+		<hr>
+		<button id="build-citation">Build Citation</button>
+		<div id='result-div' style="width:500px">
+			<code id='result'></code>
+		</div>
+	</body>
+</html>
